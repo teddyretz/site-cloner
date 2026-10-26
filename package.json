@@ -1,0 +1,38 @@
+{
+  "name": "replicator",
+  "version": "0.0.0",
+  "type": "module",
+  "imports": {
+    "#*": "./agent/*",
+    "#evals/*": "./evals/*"
+  },
+  "scripts": {
+    "build": "eve build",
+    "compare": "node --experimental-strip-types src/cli.ts compare",
+    "adjudicate": "node --experimental-strip-types src/cli.ts adjudicate",
+    "deploy": "eve deploy",
+    "dev": "eve dev",
+    "diff": "node --experimental-strip-types src/cli.ts diff",
+    "eval": "eve eval",
+    "fixture": "node --experimental-strip-types src/cli.ts fixture",
+    "record": "node --experimental-strip-types src/cli.ts record",
+    "review": "node --experimental-strip-types src/cli.ts review",
+    "start": "eve start",
+    "test": "node --test --experimental-strip-types tests/*.test.ts",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@vercel/connect": "2.5.2",
+    "ai": "^7.0.137",
+    "eve": "^0.83.2",
+    "playwright-core": "^1.64.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "24.x",
+    "typescript": "7.0.2"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}

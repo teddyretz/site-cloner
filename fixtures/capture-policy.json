@@ -1,0 +1,14 @@
+{
+  "policyVersion": "1",
+  "dataMode": "test-data-only",
+  "tenant": "local-fixture",
+  "identity": "fixture-operator",
+  "allowedOrigins": ["http://127.0.0.1:4317"],
+  "databaseOrigins": ["http://127.0.0.1:4317"],
+  "maxActionRisk": "write",
+  "injectCorrelationHeaders": true,
+  "screenshots": true,
+  "rawTrace": false,
+  "limits": {},
+  "settlement": {}
+}

@@ -1,0 +1,14 @@
+{
+  "profileVersion": "1",
+  "ignoredJsonKeys": ["id", "uuid", "createdAt", "updatedAt", "requestId", "traceId"],
+  "ignoredQueryParameters": ["_", "cacheBust", "requestId", "traceId"],
+  "ignoredDatabaseColumns": {
+    "invoices": ["id", "createdAt"],
+    "line_items": ["id", "invoiceId"]
+  },
+  "includedNetworkResourceTypes": ["xhr", "fetch"],
+  "ignoredNetworkUrlPrefixes": [],
+  "uiTextReplacements": [],
+  "normalizeIsoTimestamps": true,
+  "normalizeUuids": true
+}

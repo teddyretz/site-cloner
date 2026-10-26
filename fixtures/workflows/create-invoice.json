@@ -1,0 +1,10 @@
+{
+  "workflow": "create-invoice",
+  "steps": [
+    { "kind": "fill", "target": { "label": "Customer" }, "value": "Acme Corp", "risk": "read" },
+    { "kind": "fill", "target": { "label": "Description" }, "value": "Implementation services", "risk": "read" },
+    { "kind": "fill", "target": { "label": "Quantity" }, "value": "2", "risk": "read" },
+    { "kind": "fill", "target": { "label": "Unit price in cents" }, "value": "12500", "risk": "read" },
+    { "kind": "click", "target": { "role": "button", "name": "Create invoice" }, "risk": "write" }
+  ]
+}

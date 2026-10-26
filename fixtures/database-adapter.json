@@ -1,0 +1,13 @@
+{
+  "adapterVersion": "1",
+  "tables": {
+    "invoices": {
+      "primaryKey": ["id"],
+      "logicalKey": ["number"]
+    },
+    "line_items": {
+      "primaryKey": ["id"],
+      "logicalKey": ["description"]
+    }
+  }
+}
